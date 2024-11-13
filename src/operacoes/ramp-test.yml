@@ -1,0 +1,16 @@
+config:
+  target: 'http://localhost:3000'
+  phases:
+    - duration: 100
+      arrivalRate: 1
+      rampTo: 90
+      name: Simulação de um dia normal de acessos.
+    - duration: 100
+      arrivalRate: 1
+      rampTo: 1000
+      name: Simulação de um dia de GameDay.
+
+scenarios:
+  - flow:
+      - get:
+          url: '/'

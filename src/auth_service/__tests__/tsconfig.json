@@ -1,0 +1,12 @@
+{
+    "extends": "../tsconfig.json",          // Herda configurações do tsconfig.json raiz
+    "compilerOptions": {
+      "noEmit": true,                       // Não emite arquivos compilados, útil para testes
+      "types": ["jest", "node"]             // Inclui tipos para Jest e Node.js
+    },
+    "include": [
+      "*.test.ts"                           // Inclui todos os arquivos de teste
+    ]
+  }
+  
+  
